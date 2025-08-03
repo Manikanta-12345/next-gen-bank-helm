@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: mani12345/next-gen-configserver
-  tag: 34
+  tag: 35
 
 containerPort: 8084
 

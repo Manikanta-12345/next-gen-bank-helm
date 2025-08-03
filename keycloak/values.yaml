@@ -1,0 +1,17 @@
+auth:
+  adminUser: admin
+  adminPassword: admin123
+
+postgresql:
+  enabled: true
+  auth:
+    postgresPassword: "postgres123"
+    username: bn_keycloak
+    password: keycloak123
+    database: bitnami_keycloak
+
+service:
+  type: NodePort
+  nodePorts:
+    http: 30080
+    https: 30443

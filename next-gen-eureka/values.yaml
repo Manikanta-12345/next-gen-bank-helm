@@ -1,0 +1,28 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: next-gen-eureka
+serviceName: next-gen-eureka
+appLabel: next-gen-eureka
+appName: next-gen-eureka
+
+replicaCount: 1
+
+image:
+  repository: mani12345/next-gen-eureka
+  tag: s14
+
+containerPort: 8070
+
+service:
+  type: NodePort
+  port: 8070
+  targetPort: 8070
+
+appname_enabled: true
+profile_enabled: false
+config_enabled: true
+eureka_enabled: false
+resouceserver_enabled: false
+otel_enabled: false
+kafka_enabled: false

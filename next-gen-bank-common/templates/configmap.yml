@@ -1,0 +1,22 @@
+{{- define "common.configmap" -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.global.configMapName }}
+data:
+  SPRING_PROFILES_ACTIVE: {{ .Values.global.activeProfile }}
+  CONFIGSERVER_URL: {{ .Values.global.configServerURL }}
+  EUREKA_HOST: {{ .Values.global.eurekaServerURL }}
+  KAFKA_BOOTSTRAP_SERVERS: {{ .Values.global.kafkaBootstrapServers }}
+  KEYCLOAK_TOKEN_URL: {{ .Values.global.keyCloaTokenUrl }}
+  KEYCLOAK_USER_URL: {{ .Values.global.keyCloakUserUrl }}
+  KEYCLOAK_JWK_SET_URI: {{ .Values.global.keyCloakJwkSetUri }}
+  NEXT_GEN_UAMS_CLIENT_SECRET: {{ .Values.global.nextGenUamsClientSecret }}
+  UAMS_DB_HOST: {{ .Values.global.uamsDBHost }}
+  UAMS_DB_USER: {{ .Values.global.uamsDBUser }}
+  UAMS_DB_PASSWORD: {{ .Values.global.uamsDBPassword }}
+  GIT_URI: {{ .Values.global.gitUri }}
+  NEXT_GEN_ACCOUNTS_DB_HOST: {{ .Values.global.nextGenAccountsDBHost }}
+  NEXT_GEN_ACCOUNTS_DB_USER: {{ .Values.global.nextGenAccountsDBUser }}
+  NEXT_GEN_ACCOUNTS_DB_PASSWORD: {{ .Values.global.nextGenAccountsDBPassword }}
+{{- end -}}

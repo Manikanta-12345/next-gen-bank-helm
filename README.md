@@ -37,6 +37,7 @@ gcloud container clusters get-credentials cluster-1 --region us-central1
 https://www.youtube.com/watch?v=JGQI5pkK82w&t=301s
 https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/blob/main/java-maven-sonar-argocd-helm-k8s/spring-boot-app/JenkinsFile
 
+argocd pwd:
 ovmQN0n8n9srCnX3
 kubectl port-forward svc/argocd-server 8888:443 -n argocd
 

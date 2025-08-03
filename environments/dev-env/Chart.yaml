@@ -30,3 +30,6 @@ dependencies:
   - name: next-gen-config-server
     version: 0.1.0
     repository: file://../../next-gen-config-server
+  - name: next-gen-eureka
+    version: 0.1.0
+    repository: file://../../next-gen-eureka

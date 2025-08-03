@@ -5,8 +5,5 @@ dependencies:
 - name: next-gen-config-server
   repository: file://../../next-gen-config-server
   version: 0.1.0
-- name: next-gen-eureka
-  repository: file://../../next-gen-eureka
-  version: 0.1.0
-digest: sha256:f3d08b1005dbaccc4771e3904bc588785edece3358d506312b7583d2ee974027
-generated: "2025-08-01T16:34:47.180333+05:30"
+digest: sha256:e701565084d778101faec44dbefbfdf51139bdd9670c648dd9bb2d8b006aa23d
+generated: "2025-08-03T10:04:41.250737+05:30"

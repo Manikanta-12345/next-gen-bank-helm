@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: mani12345/next-gen-eureka
-  tag: 5
+  tag: 6
 
 containerPort: 8070
 

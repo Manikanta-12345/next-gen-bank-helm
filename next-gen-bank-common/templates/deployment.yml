@@ -33,6 +33,13 @@ spec:
               name: {{ .Values.global.configMapName }}
               key: SPRING_PROFILES_ACTIVE
         {{- end }}
+        {{- if .Values.git_enabled }}
+        - name: GIT_URI
+          valueFrom: 
+            configMapKeyRef:
+              name: {{ .Values.global.configMapName }}
+              key: GIT_URI
+        {{- end }}
         {{- if .Values.config_enabled }}
         - name: SPRING_CONFIG_IMPORT
           valueFrom: 

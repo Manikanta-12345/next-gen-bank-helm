@@ -39,3 +39,5 @@ https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/blob/main/java-maven-sona
 
 ovmQN0n8n9srCnX3
 kubectl port-forward svc/argocd-server 8888:443 -n argocd
+
+https://github.com/Manikanta-12345/next-gen-bank-helm.git

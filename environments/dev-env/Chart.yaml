@@ -33,3 +33,6 @@ dependencies:
   - name: next-gen-eureka
     version: 0.1.0
     repository: file://../../next-gen-eureka
+  - name: next-gen-uams
+    version: 0.1.0
+    repository: file://../../next-gen-uams

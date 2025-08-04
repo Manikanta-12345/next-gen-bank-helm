@@ -9,8 +9,8 @@ appName: next-gen-uams
 replicaCount: 1
 
 image:
-  repository: mani12345/next-gen-uams
-  tag: 2
+  repository: mani12345/next-gen-eureka
+  tag: 3
 
 containerPort: 8082
 

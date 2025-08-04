@@ -15,7 +15,7 @@ image:
 containerPort: 8081
 
 service:
-  type: NodePort
+  type: LoadBalancer
   port: 8081
   targetPort: 8081
 

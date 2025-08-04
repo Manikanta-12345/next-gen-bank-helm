@@ -2,7 +2,7 @@ global:
   configMapName: dev-next-gen-bank-configmap
   activeProfile: dev
   configServerURL: configserver:http://next-gen-configserver:8084/
-  eurekaServerURL: http://next-gen-eureka:8761/eureka/
+  eurekaServerURL: next-gen-eureka:8761
   keyCloaTokenUrl: http://keycloak:80/realms/next-gen-bank/protocol/openid-connect/token
   keyCloakUserUrl: http://keycloak:80/realms/next-gen-bank/admin/realms/next-gen-bank/users
   keyCloakJwkSetUri: http://keycloak:80/realms/next-gen-bank/protocol/openid-connect/certs

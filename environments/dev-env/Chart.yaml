@@ -39,3 +39,6 @@ dependencies:
   - name: next-gen-accounts-kf
     version: 0.1.0
     repository: file://../../next-gen-accounts-kf
+  - name: next-gen-gateway
+    version: 0.1.0
+    repository: file://../../next-gen-gateway

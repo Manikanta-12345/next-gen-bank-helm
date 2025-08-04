@@ -48,11 +48,11 @@ spec:
               key: CONFIGSERVER_URL
         {{- end }}
         {{- if .Values.eureka_enabled }}
-        - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
+        - name: EUREKA_HOST
           valueFrom: 
             configMapKeyRef:
               name: {{ .Values.global.configMapName }}
-              key: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
+              key: EUREKA_HOST
         {{- end }}
         {{- if .Values.resouceserver_enabled }}
         - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI

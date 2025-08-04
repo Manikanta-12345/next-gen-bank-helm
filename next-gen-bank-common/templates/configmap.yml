@@ -8,8 +8,8 @@ data:
   CONFIGSERVER_URL: {{ .Values.global.configServerURL }}
   EUREKA_HOST: {{ .Values.global.eurekaServerURL }}
   KAFKA_BOOTSTRAP_SERVERS: {{ .Values.global.kafkaBootstrapServers }}
-  KEYCLOAK_TOKEN_URL: {{ .Values.global.keyCloaTokenUrl }}
-  KEYCLOAK_USER_URL: {{ .Values.global.keyCloakUserUrl }}
+  KEYCLOACK_TOKEN_URL: {{ .Values.global.keyCloaTokenUrl }}
+  KEYCLOACK_USER_URL: {{ .Values.global.keyCloakUserUrl }}
   KEYCLOAK_JWK_SET_URI: {{ .Values.global.keyCloakJwkSetUri }}
   NEXT_GEN_UAMS_CLIENT_SECRET: {{ .Values.global.nextGenUamsClientSecret }}
   UAMS_DB_HOST: {{ .Values.global.uamsDBHost }}

@@ -1,0 +1,31 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: next-gen-gateway
+serviceName: next-gen-gateway
+appLabel: next-gen-gateway
+appName: next-gen-gateway
+
+replicaCount: 1
+
+image:
+  repository: mani12345/next-gen-gateway
+  tag: replaceImageTag
+
+containerPort: 8081
+
+service:
+  type: NodePort
+  port: 8081
+  targetPort: 8081
+
+appname_enabled: true
+git_enabled: false
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: true
+otel_enabled: false
+kafka_enabled: false
+mysql_uams_enabled: false
+keycloak_enabled: false

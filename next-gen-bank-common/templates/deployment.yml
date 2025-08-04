@@ -55,11 +55,11 @@ spec:
               key: EUREKA_HOST
         {{- end }}
         {{- if .Values.resouceserver_enabled }}
-        - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI
+        - name: KEYCLOACK_JWK_SET_URL
           valueFrom: 
             configMapKeyRef:
               name: {{ .Values.global.configMapName }}
-              key: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI
+              key: KEYCLOACK_JWK_SET_URL
         {{- end }}
         {{- if .Values.keycloak_enabled }}
         - name: NEXT_GEN_UAMS_CLIENT_SECRET

@@ -10,7 +10,7 @@ data:
   KAFKA_BOOTSTRAP_SERVERS: {{ .Values.global.kafkaBootstrapServers }}
   KEYCLOACK_TOKEN_URL: {{ .Values.global.keyCloaTokenUrl }}
   KEYCLOACK_USER_URL: {{ .Values.global.keyCloakUserUrl }}
-  KEYCLOAK_JWK_SET_URI: {{ .Values.global.keyCloakJwkSetUri }}
+  KEYCLOACK_JWK_SET_URL: {{ .Values.global.keyCloakJwkSetUri }}
   NEXT_GEN_UAMS_CLIENT_SECRET: {{ .Values.global.nextGenUamsClientSecret }}
   UAMS_DB_HOST: {{ .Values.global.uamsDBHost }}
   UAMS_DB_USER: {{ .Values.global.uamsDBUser }}

@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: mani12345/next-gen-gateway
-  tag: replaceImageTag
+  tag: 1
 
 containerPort: 8081
 

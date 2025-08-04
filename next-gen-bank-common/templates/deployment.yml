@@ -106,7 +106,7 @@ spec:
             configMapKeyRef:
               name: {{ .Values.global.configMapName }}
               key: NEXT_GEN_ACCOUNTS_DB_USER
-        - name: UAMS_DB_PASSWORD
+        - name: NEXT_GEN_ACCOUNTS_DB_PASSWORD
           valueFrom: 
             secretKeyRef:
               name: mysql-auth

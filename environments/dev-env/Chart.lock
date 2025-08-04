@@ -11,5 +11,8 @@ dependencies:
 - name: next-gen-uams
   repository: file://../../next-gen-uams
   version: 0.1.0
-digest: sha256:fa4bb314c07123dae6e9c28c80c29ad2968dd545d5c2da02916e6ab922e3fb22
-generated: "2025-08-04T19:33:47.9201+05:30"
+- name: next-gen-accounts-kf
+  repository: file://../../next-gen-accounts-kf
+  version: 0.1.0
+digest: sha256:9331b89cc77697c8250c8f65ff29aeec9eb3aa602cc491e738a12e558e8135ce
+generated: "2025-08-04T14:10:39.830254633Z"

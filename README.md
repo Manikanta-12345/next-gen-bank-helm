@@ -203,3 +203,5 @@ WARNING: There are "resources" sections in the chart not set. Using "resourcesPr
 - controller.resources
 - defaultInitContainers.prepareConfig.resources
   +info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+
+kubectl get secrets argocd-initial-admin-secret -n argocd -o yaml

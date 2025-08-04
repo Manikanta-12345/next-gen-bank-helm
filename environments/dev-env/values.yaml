@@ -4,7 +4,7 @@ global:
   configServerURL: configserver:http://next-gen-configserver:8084/
   eurekaServerURL: next-gen-eureka:8070
   keyCloaTokenUrl: http://keycloak:80/realms/next-gen-bank/protocol/openid-connect/token
-  keyCloakUserUrl: http://keycloak:80/realms/next-gen-bank/admin/realms/next-gen-bank/users
+  keyCloakUserUrl: http://keycloak:80/admin/realms/next-gen-bank/users
   keyCloakJwkSetUri: http://keycloak:80/realms/next-gen-bank/protocol/openid-connect/certs
   nextGenUamsClientSecret: 0D7pU8L5CwtoZFweoxcyAmgTdZQ892Ol
   uamsDBHost: nextgen-mysql.default.svc.cluster.local

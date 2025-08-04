@@ -14,5 +14,8 @@ dependencies:
 - name: next-gen-accounts-kf
   repository: file://../../next-gen-accounts-kf
   version: 0.1.0
-digest: sha256:9331b89cc77697c8250c8f65ff29aeec9eb3aa602cc491e738a12e558e8135ce
-generated: "2025-08-04T14:10:39.830254633Z"
+- name: next-gen-gateway
+  repository: file://../../next-gen-gateway
+  version: 0.1.0
+digest: sha256:e123a6ef37f50d00ac5c50d79fbb67dfaa2afd6a59b524aa668ed989596c0656
+generated: "2025-08-04T14:37:04.247436858Z"

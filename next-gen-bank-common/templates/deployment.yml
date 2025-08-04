@@ -61,6 +61,57 @@ spec:
               name: {{ .Values.global.configMapName }}
               key: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI
         {{- end }}
+        {{- if .Values.keycloak_enabled }}
+        - name: NEXT_GEN_UAMS_CLIENT_SECRET
+          valueFrom: 
+            configMapKeyRef:
+              name: {{ .Values.global.configMapName }}
+              key: NEXT_GEN_UAMS_CLIENT_SECRET
+        - name: KEYCLOACK_TOKEN_URL
+          valueFrom: 
+            configMapKeyRef:
+              name: {{ .Values.global.configMapName }}
+              key: KEYCLOACK_TOKEN_URL
+        - name: KEYCLOACK_USER_URL
+          valueFrom: 
+            configMapKeyRef:
+              name: {{ .Values.global.configMapName }}
+              key: KEYCLOACK_USER_URL
+        {{- end }}
+        {{- if .Values.mysql_uams_enabled }}
+        - name: UAMS_DB_HOST
+          valueFrom: 
+            configMapKeyRef:
+              name: {{ .Values.global.configMapName }}
+              key: UAMS_DB_HOST
+        - name: UAMS_DB_USER
+          valueFrom: 
+            configMapKeyRef:
+              name: {{ .Values.global.configMapName }}
+              key: UAMS_DB_USER
+        - name: UAMS_DB_PASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: mysql-auth
+              key: mysql-password
+        {{- end }}
+        {{- if .Values.mysql_accounts_enabled }}
+        - name: NEXT_GEN_ACCOUNTS_DB_HOST
+          valueFrom: 
+            configMapKeyRef:
+              name: {{ .Values.global.configMapName }}
+              key: NEXT_GEN_ACCOUNTS_DB_HOST
+        - name: NEXT_GEN_ACCOUNTS_DB_USER
+          valueFrom: 
+            configMapKeyRef:
+              name: {{ .Values.global.configMapName }}
+              key: NEXT_GEN_ACCOUNTS_DB_USER
+        - name: UAMS_DB_PASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: mysql-auth
+              key: mysql-password
+        {{- end }}
         {{- if .Values.otel_enabled }}
         - name: JAVA_TOOL_OPTIONS
           valueFrom: 
@@ -86,11 +137,11 @@ spec:
           value: {{ .Values.appName }}
         {{- end }}
         {{- if .Values.kafka_enabled }}
-        - name: SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS
+        - name: KAFKA_BOOTSTRAP_SERVERS
           valueFrom: 
             configMapKeyRef:
               name: {{ .Values.global.configMapName }}
-              key: SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS
+              key: KAFKA_BOOTSTRAP_SERVERS
         {{- end }}
         
 {{- end -}}

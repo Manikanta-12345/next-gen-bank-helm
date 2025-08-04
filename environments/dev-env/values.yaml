@@ -3,15 +3,13 @@ global:
   activeProfile: dev
   configServerURL: configserver:http://next-gen-configserver:8084/
   eurekaServerURL: http://next-gen-eureka:8761/eureka/
-  keyCloaTokenUrl: http://keycloak:8080/realms/next-gen-bank/protocol/openid-connect/token
-  keyCloakUserUrl: http://keycloak:8080/realms/next-gen-bank/admin/realms/next-gen-bank/users
-  keyCloakJwkSetUri: http://keycloak:8080/realms/next-gen-bank/protocol/openid-connect/certs
-  nextGenUamsClientSecret: p3sqTHth08sx8UN5WGmVXkOic83HCyuV
-  uamsDBHost: host.docker.internal
-  uamsDBUser: uams_db_user
-  uamsDBPassword: uams_db_password
+  keyCloaTokenUrl: http://keycloak:80/realms/next-gen-bank/protocol/openid-connect/token
+  keyCloakUserUrl: http://keycloak:80/realms/next-gen-bank/admin/realms/next-gen-bank/users
+  keyCloakJwkSetUri: http://keycloak:80/realms/next-gen-bank/protocol/openid-connect/certs
+  nextGenUamsClientSecret: 0D7pU8L5CwtoZFweoxcyAmgTdZQ892Ol
+  uamsDBHost: nextgen-mysql.default.svc.cluster.local
+  uamsDBUser: next-gen-user
   gitUri: https://github.com/Manikanta-12345/next-gen-bank-config.git
-  kafkaBootstrapServers: localhost:9092
-  nextGenAccountsDBHost: host.docker.internal
-  nextGenAccountsDBUser: next_gen_accounts_db_user
-  nextGenAccountsDBPassword: next_gen_accounts_db_password
+  kafkaBootstrapServers: kafka-controller-0.kafka-controller-headless.default.svc.cluster.local:9092,kafka-controller-1.kafka-controller-headless.default.svc.cluster.local:9092
+  nextGenAccountsDBHost: nextgen-mysql.default.svc.cluster.local
+  nextGenAccountsDBUser: next-gen-user

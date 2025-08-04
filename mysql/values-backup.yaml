@@ -1,0 +1,29 @@
+auth:
+  existingSecret: mysql-auth # Reference to the secret created above
+  username: next_gen_user # Common app user for both DBs
+  database: next-gen-uams # Default DB to auto-create
+  secretKeys:
+    rootPasswordKey: mysql-root-password
+    userPasswordKey: mysql-user-password
+
+primary:
+  persistence:
+    enabled: true
+    size: 3Gi
+    storageClass: standard # GCP's standard storage class
+
+  service:
+    type: NodePort
+    port: 3306
+
+  resources:
+    limits:
+      cpu: 500m
+      memory: 1Gi
+    requests:
+      cpu: 250m
+      memory: 512Mi
+
+initdbScripts:
+  create-next-gen-accounts.sql: |
+    CREATE DATABASE IF NOT EXISTS `next-gen-accounts`;

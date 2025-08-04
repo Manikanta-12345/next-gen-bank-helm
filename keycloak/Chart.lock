@@ -1,6 +1,9 @@
 dependencies:
-- name: keycloak
-  repository: https://charts.bitnami.com/bitnami
-  version: 19.0.0
-digest: sha256:b1d93ef69067c0f3606a2e2bc225c3b686282ac5b62f9dd20d71d55fb40064bb
-generated: "2025-08-01T12:03:22.553458+05:30"
+- name: postgresql
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 16.4.2
+- name: common
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 2.29.0
+digest: sha256:b8073299b64cb1ef35de88a5fb3f0787dc1a84d110efdc2fc9f5f89276dc66b1
+generated: "2025-01-14T21:42:15.482061741Z"

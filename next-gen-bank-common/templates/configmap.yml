@@ -14,9 +14,7 @@ data:
   NEXT_GEN_UAMS_CLIENT_SECRET: {{ .Values.global.nextGenUamsClientSecret }}
   UAMS_DB_HOST: {{ .Values.global.uamsDBHost }}
   UAMS_DB_USER: {{ .Values.global.uamsDBUser }}
-  UAMS_DB_PASSWORD: {{ .Values.global.uamsDBPassword }}
   GIT_URI: {{ .Values.global.gitUri }}
   NEXT_GEN_ACCOUNTS_DB_HOST: {{ .Values.global.nextGenAccountsDBHost }}
   NEXT_GEN_ACCOUNTS_DB_USER: {{ .Values.global.nextGenAccountsDBUser }}
-  NEXT_GEN_ACCOUNTS_DB_PASSWORD: {{ .Values.global.nextGenAccountsDBPassword }}
 {{- end -}}

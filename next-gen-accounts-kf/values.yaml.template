@@ -1,0 +1,31 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: next-gen-accounts-kf
+serviceName: next-gen-accounts-kf
+appLabel: next-gen-accounts-kf
+appName: next-gen-accounts-kf
+
+replicaCount: 1
+
+image:
+  repository: mani12345/next-gen-accounts-kf
+  tag: replaceImageTag
+
+containerPort: 8083
+
+service:
+  type: NodePort
+  port: 8083
+  targetPort: 8083
+
+appname_enabled: true
+git_enabled: false
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: false
+otel_enabled: false
+kafka_enabled: true
+mysql_accounts_enabled: true
+keycloak_enabled: false

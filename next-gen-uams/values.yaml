@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: mani12345/next-gen-uams
-  tag: 12
+  tag: 13
 
 containerPort: 8082
 

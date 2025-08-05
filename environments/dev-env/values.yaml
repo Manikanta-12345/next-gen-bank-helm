@@ -9,6 +9,6 @@ global:
   uamsDBHost: nextgen-mysql.default.svc.cluster.local
   uamsDBUser: next-gen-user
   gitUri: https://github.com/Manikanta-12345/next-gen-bank-config.git
-  kafkaBootstrapServers: kafka-controller-0.kafka-controller-headless.default.svc.cluster.local:9092,kafka-controller-1.kafka-controller-headless.default.svc.cluster.local:9092
+  kafkaBootstrapServers: kafka-controller-0.kafka-controller-headless.default.svc.cluster.local:9092,kafka-controller-1.kafka-controller-headless.default.svc.cluster.local:9092,kafka-controller-2.kafka-controller-headless.default.svc.cluster.local:9092
   nextGenAccountsDBHost: nextgen-mysql.default.svc.cluster.local
   nextGenAccountsDBUser: next-gen-user

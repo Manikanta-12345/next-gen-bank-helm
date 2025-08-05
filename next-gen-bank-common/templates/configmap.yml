@@ -11,7 +11,6 @@ data:
   KEYCLOACK_TOKEN_URL: {{ .Values.global.keyCloaTokenUrl }}
   KEYCLOACK_USER_URL: {{ .Values.global.keyCloakUserUrl }}
   KEYCLOACK_JWK_SET_URL: {{ .Values.global.keyCloakJwkSetUri }}
-  NEXT_GEN_UAMS_CLIENT_SECRET: {{ .Values.global.nextGenUamsClientSecret }}
   UAMS_DB_HOST: {{ .Values.global.uamsDBHost }}
   UAMS_DB_USER: {{ .Values.global.uamsDBUser }}
   GIT_URI: {{ .Values.global.gitUri }}

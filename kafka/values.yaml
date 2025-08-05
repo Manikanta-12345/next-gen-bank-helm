@@ -194,7 +194,7 @@ listeners:
   controller:
     name: CONTROLLER
     containerPort: 9093
-    protocol: SASL_PLAINTEXT
+    protocol: PLAINTEXT
     sslClientAuth: ""
   ## @param listeners.interbroker.name Name for the Kafka inter-broker listener
   ## @param listeners.interbroker.containerPort Port for the Kafka inter-broker listener
@@ -202,7 +202,7 @@ listeners:
   ## @param listeners.interbroker.sslClientAuth Optional. If SASL_SSL is enabled, configure mTLS TLS authentication type. If SSL protocol is enabled, overrides tls.authType for this listener. Allowed values are 'none', 'requested' and 'required'
   interbroker:
     containerPort: 9094
-    protocol: SASL_PLAINTEXT
+    protocol: PLAINTEXT
     name: INTERNAL
     sslClientAuth: ""
   ## @param listeners.external.containerPort Port for the Kafka external listener
@@ -211,7 +211,7 @@ listeners:
   ## @param listeners.external.sslClientAuth Optional. If SASL_SSL is enabled, configure mTLS TLS authentication type. If SSL protocol is enabled, overrides tls.sslClientAuth for this listener. Allowed values are 'none', 'requested' and 'required'
   external:
     containerPort: 9095
-    protocol: SASL_PLAINTEXT
+    protocol: PLAINTEXT
     name: EXTERNAL
     sslClientAuth: ""
   ## @param listeners.extraListeners Array of listener objects to be appended to already existing listeners
@@ -1602,7 +1602,7 @@ broker:
 service:
   ## @param service.type Kubernetes Service type
   ##
-  type: ClusterIP
+  type: NodePort
   ## @param service.ports.client Kafka svc port for client connections
   ## @param service.ports.controller Kafka svc port for controller connections
   ## @param service.ports.interbroker Kafka svc port for inter-broker connections

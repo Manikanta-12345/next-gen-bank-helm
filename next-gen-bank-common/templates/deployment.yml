@@ -64,9 +64,9 @@ spec:
         {{- if .Values.keycloak_enabled }}
         - name: NEXT_GEN_UAMS_CLIENT_SECRET
           valueFrom: 
-            configMapKeyRef:
-              name: {{ .Values.global.configMapName }}
-              key: NEXT_GEN_UAMS_CLIENT_SECRET
+            secretKeyRef:
+              name: mysql-auth
+              key: nextgen-uams-client-secret
         - name: KEYCLOACK_TOKEN_URL
           valueFrom: 
             configMapKeyRef:

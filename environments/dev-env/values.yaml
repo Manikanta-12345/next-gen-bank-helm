@@ -6,7 +6,6 @@ global:
   keyCloaTokenUrl: http://keycloak:80/realms/next-gen-bank/protocol/openid-connect/token
   keyCloakUserUrl: http://keycloak:80/admin/realms/next-gen-bank/users
   keyCloakJwkSetUri: http://keycloak:80/realms/next-gen-bank/protocol/openid-connect/certs
-  nextGenUamsClientSecret: 0D7pU8L5CwtoZFweoxcyAmgTdZQ892Ol
   uamsDBHost: nextgen-mysql.default.svc.cluster.local
   uamsDBUser: next-gen-user
   gitUri: https://github.com/Manikanta-12345/next-gen-bank-config.git
